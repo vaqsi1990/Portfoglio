@@ -119,8 +119,16 @@ export default function ProjectsSection() {
 
   useEffect(() => {
     if (!emblaApi) return;
-    onSelect();
+
+    // Defer the initial state sync to avoid "setState in effect body" warnings.
+    const rafId = window.requestAnimationFrame(() => onSelect());
     emblaApi.on("reInit", onSelect).on("select", onSelect);
+
+    // Cleanup listeners on unmount / emblaApi change.
+    return () => {
+      window.cancelAnimationFrame(rafId);
+      emblaApi.off("reInit", onSelect).off("select", onSelect);
+    };
   }, [emblaApi, onSelect]);
 
   const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
