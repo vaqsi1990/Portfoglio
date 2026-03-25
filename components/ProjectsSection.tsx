@@ -14,31 +14,52 @@ const playfair = Playfair_Display({
 const projects = [
   {
     id: "givevest",
-    title: "Givevest",
+    title: "Sleepandbed",
     description: "Charity & fundraising landing",
-    image: "https://picsum.photos/seed/givevest/960/600",
-    href: "#",
+    image: "/projects/1.jpg",
+    href: "https://www.sleepandbed.ge/ge",
   },
   {
     id: "garden",
-    title: "Garden Service",
+    title: "Istanbul Travel",
     description: "Landscaping & garden care",
-    image: "https://picsum.photos/seed/garden/960/600",
-    href: "#",
+    image: "/projects/2.jpg",
+    href: "https://www.istanbultravel.ge/",
   },
   {
     id: "saas",
-    title: "SaaS Dashboard",
+    title: "Lappetit",
     description: "Analytics & team workspace",
-    image: "https://picsum.photos/seed/saasdash/960/600",
-    href: "#",
+    image: "/projects/3.jpg",
+    href: "https://www.lappetit.ge/",
   },
   {
-    id: "ecommerce",
-    title: "Shop Front",
+    id: "shcool",
+    title: "Eduarena",
     description: "E-commerce storefront",
-    image: "https://picsum.photos/seed/shopfront/960/600",
-    href: "#",
+    image: "/projects/4.jpg",
+    href: "https://www.eduarena.ge/",
+  },
+  {
+    id: "ski",
+    title: "Skirentfanatic",
+    description: "E-commerce storefront",
+    image: "/projects/5.jpg",
+    href: "https://www.skirentfanatic.ge/en",
+  },
+  {
+    id: "art",
+    title: "Irinadzart",
+    description: "E-commerce storefront",
+    image: "/projects/6.jpg",
+    href: "https://www.irinadzart.ge/ka",
+  },
+  {
+    id: "loundry",
+    title: "loundry",
+    description: "E-commerce storefront",
+    image: "/projects/7.jpg",
+    href: "https://loundry-five.vercel.app/",
   },
 ] as const;
 
@@ -147,7 +168,8 @@ export default function ProjectsSection() {
               >
                 <Link
                   href={project.href}
-                  className="group block focus:outline-none focus-visible:ring-2 focus-visible:ring-white/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#141416]"
+                  target="_blank"
+                  className="group  block focus:outline-none focus-visible:ring-2 focus-visible:ring-white/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#141416]"
                 >
                   <article className="relative">
                   
@@ -171,7 +193,7 @@ export default function ProjectsSection() {
                         />
                       </div>
                     </div>
-                    <p className="mt-4 md:text-[18px] text-[16px] font-medium text-slate-400">{project.title}</p>
+                    <p className="mt-4 md:text-[18px] text-[16px] font-medium text-white">{project.title}</p>
                   
                   </article>
                 </Link>

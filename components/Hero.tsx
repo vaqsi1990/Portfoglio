@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="max-w-xl space-y-6 text-left">
         <p className="md:text-[30px] text-8 uppercase tracking-[0.2em] text-white">Web Developer</p>
         <h1 className="text-[30px] font-bold text-white lg:text-[44px]">Hi, I am Valerian Margalitadze</h1>
-        <p className="text-base leading-7 text-slate-300 md:text-lg">
+        <p className="text-base leading-7 text-white md:text-lg">
           I build modern, fast, and responsive web interfaces with React and Next.js, and I also
           develop scalable backend services with Node.js and NestJS.
         </p>
@@ -30,9 +30,9 @@ export default function Hero() {
           />
         </div>
 
-        <div className="flex flex-col items-center justify-center gap-8 text-white">
+        <div className="flex flex-col  md:mt-32 items-center justify-center gap-8 text-white">
           <a
-            href="https://facebook.com"
+            href="https://www.facebook.com/vaqsii.margalitadze"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Facebook"
@@ -45,7 +45,7 @@ export default function Hero() {
           <span className="h-12 w-px bg-white/80 md:h-14" aria-hidden="true" />
 
           <a
-            href="https://linkedin.com"
+            href="linkedin.com/in/valerian-margalitadze-91aa631a0"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
@@ -58,7 +58,20 @@ export default function Hero() {
           <span className="h-12 w-px bg-white/80 md:h-14" aria-hidden="true" />
 
           <a
-            href="https://wa.me/"
+            href="https://t.me/Vaqsi_Margalitadze"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Telegram"
+            className="transition border border-white rounded-full p-4  "
+          >
+            <svg viewBox="0 0 24 24" className="h-10 w-10 fill-current md:h-12 md:w-12" aria-hidden="true">
+              <path d="M22.1 3.2L2.6 10.9c-1 .4-1 1.8 0 2.2l5.7 2.2 2.2 5.7c.4 1 1.8 1 2.2 0l7.7-19.5c.4-1-.7-2.1-1.3-1.3zM9.1 15.2l-.2 3.4 1.7-2.3 7.1-7.1-8.7 6z" />
+            </svg>
+          </a>
+          <span className="h-12 w-px bg-white/80 md:h-14" aria-hidden="true" />
+
+          <a
+            href="https://wa.me/599344706"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="WhatsApp"

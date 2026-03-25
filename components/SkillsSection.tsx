@@ -71,8 +71,8 @@ export default function SkillsSection() {
                   key={language}
                   className="flex min-w-[10rem] flex-1 items-center justify-between gap-4 rounded-md border border-white/[0.06] bg-[#22252f]/90 px-5 py-4 sm:min-w-0 sm:flex-1"
                 >
-                  <span className="md:text-[18px] text-[16px] font-medium text-slate-400">{language}</span>
-                  <span className="shrink-0 md:text-[18px] text-[16px] tabular-nums text-slate-300">{level}</span>
+                  <span className="md:text-[18px] text-[16px] font-medium text-white">{language}</span>
+                  <span className="shrink-0 md:text-[18px] text-[16px] tabular-nums text-white">{level}</span>
                 </li>
               ))}
             </ul>
