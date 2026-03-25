@@ -56,10 +56,17 @@ const projects = [
   },
   {
     id: "loundry",
-    title: "loundry",
+    title: "Loundry (In Progress)",
     description: "E-commerce storefront",
     image: "/projects/7.jpg",
     href: "https://loundry-five.vercel.app/",
+  },
+  {
+    id: "postifly",
+    title: "Postifly (In Progress)",
+    description: "E-commerce storefront",
+    image: "/projects/8.jpg",
+    href: "https://www.postifly.ge/ka",
   },
 ] as const;
 
