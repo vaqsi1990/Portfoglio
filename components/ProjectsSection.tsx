@@ -144,7 +144,7 @@ export default function ProjectsSection() {
   return (
     <section
       id="projects"
-      className="scroll-mt-20  py-16 md:py-24"
+      className="scroll-mt-20  mb-14 mt-14"
       aria-labelledby="projects-heading"
     >
       <div className="mx-auto max-w-6xl px-6">
@@ -153,9 +153,9 @@ export default function ProjectsSection() {
            
             <h2
               id="projects-heading"
-              className={`${playfair.className} mt-2 text-[30px] font-bold text-white lg:text-[44px]`}
+              className={` mx-auto uppercase  mt-3 max-w-3xl text-center text-[25px] leading-tight  text-white md:mt-4 md:text-[30px] lg:leading-[1.15]`}
             >
-              My Complete Projects
+              My Projects
             </h2>
           </div>
           <div className="flex gap-3 md:gap-4">
@@ -208,7 +208,7 @@ export default function ProjectsSection() {
                         />
                       </div>
                     </div>
-                    <p className="mt-4 md:text-[18px] text-[16px] font-medium text-white">{project.title}</p>
+                    <p className="mt-4 md:text-[20px] text-[16px] font-medium text-white">{project.title}</p>
                   
                   </article>
                 </Link>

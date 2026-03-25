@@ -28,12 +28,7 @@ export default function Header() {
           ))}
         </ul>
 
-        <Link
-          href="#contact"
-          className="rounded-full border border-white px-4 py-2 text-white md:text-[18px] transition hover:opacity-90 dark:border-white/30 dark:bg-white dark:text-black"
-        >
-          Hire Me
-        </Link>
+      
       </nav>
     </header>
   );

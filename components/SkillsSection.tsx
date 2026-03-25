@@ -25,21 +25,21 @@ export default function SkillsSection() {
   return (
     <section
       id="skills"
-      className="scroll-mt-20 py-16 md:py-24"
+      className="scroll-mt-20  mt-14"
       aria-labelledby="skills-heading"
     >
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-6xl border border-white rounded-4xl  px-8 py-8">
         <div>
          
           <h2
             id="skills-heading"
-            className={`${playfair.className} mx-auto mt-3 max-w-3xl text-center text-[30px] leading-tight font-bold text-white md:mt-4 lg:text-[44px] lg:leading-[1.15]`}
+            className={` mx-auto uppercase  mt-3 max-w-3xl text-center text-[25px] leading-tight  text-white md:mt-4 md:text-[30px] lg:leading-[1.15]`}
           >
-            My Special Skill Field Here.
+            My  Skill
           </h2>
          
 
-          <div className="mt-12 grid gap-5 md:mt-14 md:grid-cols-2 md:gap-6 lg:gap-8">
+          <div className="mt-10 grid gap-5  md:grid-cols-2 md:gap-6 lg:gap-8">
             <div className="flex flex-col gap-5">
               {skills.slice(0, 3).map((name) => (
                 <Skill key={name} name={name} />
@@ -55,12 +55,12 @@ export default function SkillsSection() {
 
           
         <div
-          className="mt-14 border-t  border-white/10 pt-14 md:mt-16 md:pt-16"
+          className="mt-14 "
           aria-labelledby="languages-heading"
         >
             <h3
               id="languages-heading"
-              className={`${playfair.className} mx-auto text-center mb-4 shrink-0 text-2xl font-bold text-white md:text-3xl`}
+              className={` mx-auto uppercase  mt-3 max-w-3xl text-center text-[25px] leading-tight  text-white md:mt-4 md:text-[30px] lg:leading-[1.15]`}
             >
               Languages
             </h3>
@@ -71,8 +71,8 @@ export default function SkillsSection() {
                   key={language}
                   className="flex min-w-[10rem] flex-1 items-center justify-between gap-4 rounded-md border border-white/[0.06] bg-[#22252f]/90 px-5 py-4 sm:min-w-0 sm:flex-1"
                 >
-                  <span className="md:text-[18px] text-[16px] font-medium text-white">{language}</span>
-                  <span className="shrink-0 md:text-[18px] text-[16px] tabular-nums text-white">{level}</span>
+                  <span className="md:text-[20px] text-[16px] font-medium text-white">{language}</span>
+                  <span className="shrink-0 md:text-[20px] text-[16px] tabular-nums text-white">{level}</span>
                 </li>
               ))}
             </ul>
