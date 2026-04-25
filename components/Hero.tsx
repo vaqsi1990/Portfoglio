@@ -19,8 +19,8 @@ export default function Hero() {
         </a>
       </div>
 
-      <div className="mx-auto flex flex-col md:flex-row items-center gap-8 md:relative md:-top-[150px] md:self-start">
-        <div className="relative w-[320px] overflow-hidden rounded-2xl sm:w-[400px] md:w-[560px] aspect-[4/5]">
+      <div className="mx-auto  flex flex-col md:flex-row items-center gap-8 md:relative md:-top-[150px] md:self-start">
+        <div className="relative w-[320px] -mt-33 md:mt-0 overflow-hidden  rounded-2xl sm:w-[400px] md:w-[560px] aspect-[4/5]">
           <Image
             src="/me.png"
             alt="Portrait of Vako"
