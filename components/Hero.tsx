@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="mx-auto flex h-[90vh] max-w-6xl flex-col items-start gap-10 px-6  md:flex-row md:justify-between">
-      <div className="max-w-xl mt-[150px] space-y-6 text-left">
+    <section className="mx-auto flex h-[90vh] max-w-6xl flex-col items-start gap-10  md:flex-row md:justify-between">
+      <div className="max-w-xl px-6 md:px-0 mt-10 md:mt-[150px] space-y-6 text-left">
         <p className="md:text-[30px] text-8 uppercase tracking-[0.2em] text-white">Web Developer</p>
         <h1 className="text-[30px] font-bold text-white lg:text-[44px]">Hi, I am Valerian Margalitadze</h1>
         <p className="text-base leading-7 text-white md:text-lg">
@@ -19,18 +19,19 @@ export default function Hero() {
         </a>
       </div>
 
-      <div className="mx-auto flex flex-row items-center gap-8 md:relative md:-top-[150px] md:self-start">
-        <div className="relative h-[500px] w-[320px] overflow-hidden rounded-2xl md:h-[750px] sm:w-[400px]  md:w-[560px]">
+      <div className="mx-auto flex flex-col md:flex-row items-center gap-8 md:relative md:-top-[150px] md:self-start">
+        <div className="relative w-[320px] overflow-hidden rounded-2xl sm:w-[400px] md:w-[560px] aspect-[4/5]">
           <Image
             src="/me.png"
             alt="Portrait of Vako"
             fill
             className="object-cover"
+           
             priority
           />
         </div>
 
-        <div className="flex flex-col md:mt-24  items-center justify-center gap-6 text-white">
+        <div className="flex flex-row md:flex-col md:mt-24  items-center justify-center gap-6 text-white">
           <a
             href="https://www.facebook.com/vaqsii.margalitadze"
             target="_blank"

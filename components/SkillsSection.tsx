@@ -25,10 +25,10 @@ export default function SkillsSection() {
   return (
     <section
       id="skills"
-      className="scroll-mt-20  mt-14"
+      className="scroll-mt-20 px-6 mt-14"
       aria-labelledby="skills-heading"
     >
-      <div className="mx-auto max-w-6xl border border-white rounded-4xl  px-8 py-8">
+      <div className="mx-auto mt-84 md:mt-0  max-w-6xl border border-white rounded-4xl  px-8 py-8">
         <div>
          
           <h2

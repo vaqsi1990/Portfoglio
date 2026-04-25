@@ -144,7 +144,7 @@ export default function ProjectsSection() {
   return (
     <section
       id="projects"
-      className="scroll-mt-20  mb-14 mt-14"
+      className="scroll-mt-20  mb-14 mt-10 md:mt-14"
       aria-labelledby="projects-heading"
     >
       <div className="mx-auto max-w-6xl px-6">
@@ -158,7 +158,7 @@ export default function ProjectsSection() {
               My Projects
             </h2>
           </div>
-          <div className="flex gap-3 md:gap-4">
+          <div className="flex mx-auto md:mx-0 gap-3 md:gap-4">
             <CarouselArrow
               direction="prev"
               label="Previous projects"
@@ -208,7 +208,7 @@ export default function ProjectsSection() {
                         />
                       </div>
                     </div>
-                    <p className="mt-4 md:text-[20px] text-[16px] font-medium text-white">{project.title}</p>
+                    <p className="mt-4 md:text-[20px] text-center  text-[16px] font-medium text-white">{project.title}</p>
                   
                   </article>
                 </Link>
