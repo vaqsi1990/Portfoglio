@@ -11,8 +11,7 @@ export default function Hero() {
           Hi, I am Valerian Margalitadze
         </h1>
         <p className="text-base leading-7 text-white md:text-[17px] lg:text-lg">
-          I create modern, fast, and responsive web interfaces with React and Next.js, and I also
-          develop scalable backend services with Node.js and NestJS.
+        I’m a frontend developer with 3 years of freelance experience, mainly working with React, TypeScript, and Next.js. I’ve built several commercial projects, including e-commerce websites, booking systems, and an online testing platform. I’ve worked on full-cycle development and also have some backend experience with Node.js and PostgreSQL. 
         </p>
         <a
           href="/Valerian%20Margalitadze%20.pdf"
@@ -23,7 +22,7 @@ export default function Hero() {
         </a>
       </div>
 
-      <div className="mx-auto flex w-full max-w-md flex-col items-center gap-6 md:max-w-none md:flex-row md:justify-center md:gap-8 lg:relative lg:w-auto lg:max-w-none lg:shrink-0 lg:flex-row lg:gap-10 lg:self-start lg:-top-[150px] xl:gap-12">
+      <div className="mx-auto flex w-full max-w-md flex-col items-center gap-6 md:max-w-none md:flex-col md:justify-center md:gap-8 lg:relative lg:w-auto lg:max-w-none lg:shrink-0 lg:flex-row lg:gap-10 lg:self-start lg:-top-[150px] xl:gap-12">
         <div className="relative aspect-[4/5] w-full max-w-[300px] shrink-0 overflow-hidden rounded-2xl sm:max-w-[340px] md:max-w-[280px] lg:w-[min(42vw,480px)] lg:max-w-[480px] xl:w-[min(44vw,560px)] xl:max-w-[560px] 2xl:w-[560px]">
           <Image
             src="/me.png"
