@@ -4,7 +4,7 @@ const CONTACT_PHONE = "+599344706";
 export default function Footer() {
   return (
     <footer className="mt-auto w-full border-t border-white/10 py-10">
-      <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-4 px-6 text-white md:flex-row md:items-center">
+      <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-4 px-4 text-white sm:px-6 md:gap-5 lg:flex-row lg:items-center">
         <p className=" text-white md:text-[18px] text-4">
           © {new Date().getFullYear()} Valerian Margalitadze
         </p>

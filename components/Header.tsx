@@ -15,7 +15,7 @@ export default function Header() {
           My Portfolio
         </Link>
 
-        <ul className="hidden items-center gap-6 text-sm font-medium md:flex">
+        <ul className="hidden items-center gap-4 text-sm font-medium md:flex lg:gap-6">
           {navItems.map((item) => (
             <li key={item.href}>
               <Link

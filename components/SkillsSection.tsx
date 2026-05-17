@@ -25,10 +25,10 @@ export default function SkillsSection() {
   return (
     <section
       id="skills"
-      className="scroll-mt-20 px-6 mt-14"
+      className="scroll-mt-20 mt-14 px-4 sm:px-6"
       aria-labelledby="skills-heading"
     >
-      <div className="mx-auto mt-54 md:mt-0  max-w-6xl border border-white rounded-4xl  px-8 py-8">
+      <div className="mx-auto max-w-6xl rounded-4xl border border-white px-5 py-6 sm:px-6 sm:py-7 md:px-7 md:py-8 lg:px-8">
         <div>
          
           <h2
@@ -64,12 +64,12 @@ export default function SkillsSection() {
             >
               Languages
             </h3>
-          <div className="mt-2 flex flex-col gap-6 md:mt-3 md:flex-row md:items-center md:gap-8 lg:gap-12">
-            <ul className="flex min-w-0 flex-1 flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-stretch sm:gap-3">
+          <div className="mt-2 md:mt-3">
+            <ul className="grid gap-3 sm:grid-cols-2 md:grid-cols-3">
               {languages.map(({ language, level }) => (
                 <li
                   key={language}
-                  className="flex min-w-[10rem] flex-1 items-center justify-between gap-4 rounded-md border border-white/[0.06] bg-[#22252f]/90 px-5 py-4 sm:min-w-0 sm:flex-1"
+                  className="flex items-center justify-between gap-4 rounded-md border border-white/[0.06] bg-[#22252f]/90 px-4 py-3.5 md:px-5 md:py-4"
                 >
                   <span className="md:text-[20px] text-[16px] font-medium text-white">{language}</span>
                   <span className="shrink-0 md:text-[20px] text-[16px] tabular-nums text-white">{level}</span>

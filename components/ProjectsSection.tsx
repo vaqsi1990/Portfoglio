@@ -147,18 +147,17 @@ export default function ProjectsSection() {
       className="scroll-mt-20  mb-14 mt-10 md:mt-14"
       aria-labelledby="projects-heading"
     >
-      <div className="mx-auto max-w-6xl px-6">
-        <div className="mb-10 flex flex-col gap-6 md:mb-12 md:flex-row md:items-center md:justify-between">
-          <div>
-           
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+        <div className="mb-8 flex flex-col gap-5 sm:mb-10 md:mb-12 md:flex-row md:items-center md:justify-between md:gap-6">
+          <div className="min-w-0 flex-1">
             <h2
               id="projects-heading"
-              className={` mx-auto uppercase  mt-3 max-w-3xl text-center text-[25px] leading-tight  text-white md:mt-4 md:text-[30px] lg:leading-[1.15]`}
+              className="mt-3 max-w-3xl text-center text-[25px] leading-tight text-white uppercase md:mt-4 md:text-left md:text-[28px] lg:text-[30px] lg:leading-[1.15]"
             >
               My Projects
             </h2>
           </div>
-          <div className="flex mx-auto md:mx-0 gap-3 md:gap-4">
+          <div className="mx-auto flex shrink-0 gap-3 md:mx-0 md:gap-4">
             <CarouselArrow
               direction="prev"
               label="Previous projects"
@@ -179,7 +178,7 @@ export default function ProjectsSection() {
             {projects.map((project, index) => (
               <div
                 key={project.id}
-                className="min-w-0 shrink-0 grow-0 flex-[0_0_auto] w-[min(88vw,420px)] sm:w-[min(75vw,480px)] md:w-[min(calc(50vw-2.25rem),480px)] lg:w-[min(calc(45vw-1.25rem),520px)] mr-6"
+                className="mr-4 min-w-0 shrink-0 grow-0 flex-[0_0_auto] basis-[min(85vw,360px)] sm:mr-5 sm:basis-[min(72vw,400px)] md:mr-6 md:basis-[min(42vw,360px)] lg:basis-[min(calc(45vw-1.25rem),480px)] xl:basis-[min(calc(40vw-1.25rem),520px)]"
               >
                 <Link
                   href={project.href}
@@ -203,7 +202,7 @@ export default function ProjectsSection() {
                           alt={project.title}
                           fill
                           className="object-cover"
-                          sizes="(max-width: 768px) 88vw, (max-width: 1024px) 45vw, 40vw"
+                          sizes="(max-width: 767px) 85vw, (max-width: 1023px) 42vw, 40vw"
                           priority={index === 0}
                         />
                       </div>
